@@ -847,13 +847,9 @@ int InitializeLieroX()
 	// Setup the HTTP proxy
 	AutoSetupHTTPProxy();
 
-	tLX->bVideoModeChanged = false;
-	tLX->bQuitGame = false;
-	tLX->bQuitCtrlC = false;
 	tLX->debug_string = "";
 	tLX->currentTime = 0;
 	tLX->fDeltaTime = 0;
-	tLX->bHosted = false;
 
 	if (!SkinnedGUI::InitializeGuiSkinning())
 		return false;
